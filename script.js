@@ -32,7 +32,7 @@ function drawTwoCards() {
         remainingCardsEl.textContent = 'Get a new deck first';
         return;
     }
-    fetch(`http://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`)
+    fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`)
         .then(res => res.json())
         .then(data => {
             data.cards.forEach((card, index) => {
