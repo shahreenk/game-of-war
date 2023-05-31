@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/playing-cards-bg.jpg);
+  background-position: center;
+  font-family: "Heebo", sans-serif;
+  color: #ffea00;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 3px;
+  text-shadow: 0 0 5px #000;
+}
+
+.title {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+h2,
+h3 {
+  letter-spacing: 2px;
+}
+
+#remaining-cards {
+  margin: 0;
+  width: 210px;
+  height: 28px;
+}
+
+.score-container {
+  margin-top: 0;
+}
+
+.content-container {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #000000b8;
+  height: 700px;
+  padding: 3em 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+}
+
+.card-slot {
+  width: 226px;
+  height: 314px;
+  border: 1px solid #ffea00;
+  border-radius: 12px;
+}
+
+.score-container {
+  width: 226px;
+  height: 28px;
+}
+
+.card-slot img {
+  width: 100%;
+}
+
+#winner-message {
+  width: 226px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 200px;
+  padding: 0.5em 0;
+  border-radius: 0.5em;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #37a91b;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
